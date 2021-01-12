@@ -1,11 +1,12 @@
 {
   "name": "adaptivitynavigation",
   "version": "1.0.2",
-  "description": "Для адаптивного ui навигации в зависимости от размеров экрана",
+  "description": "Библиотека для адаптивного ui навигации в зависимости от размеров экрана",
   "main": "dist/index.ts",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc && npm publish"
+    "build": "tsc",
+    "publish": "npm run build && npm publish"
   },
   "author": "Danya Rubcov",
   "license": "MIT",
@@ -19,16 +20,13 @@
     "install-peers-cli": "^2.2.0",
     "typescript": "^4.1.2"
   },
-  "dependencies": {
-    "@vkontakte/icons": "^1.61.1",
-    "@vkontakte/vk-bridge": "^2.3.0",
-    "@vkontakte/vkui": "^3.13.2",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "^4.0.1"
+  "peerDependencies": {
+    "@vkontakte/vkui": "^4.0.4",
+    "@vkontakte/vkjs": "^0.20.0",
+    "react": "^17.0.1"
   },
   "files": [
-    "./dist"
+    "dist"
   ],
   "bugs": {
     "url": "https://github.com/ub1x/AdaptivityNavigation/issues"
