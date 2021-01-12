@@ -7,13 +7,13 @@
 Используя npm:
 
 ```sh
-$ npm i @ub1x/adaptivitynavigation
+$ npm i adaptivitynavigation
 ```
 
 Используя yarn:
 
 ```sh
-$ yarn add @ub1x/adaptivitynavigation
+$ yarn add adaptivitynavigation
 ```
 
 # Использование
@@ -24,7 +24,7 @@ $ yarn add @ub1x/adaptivitynavigation
 
 ```jsx
 // App.jsx
-import { NavigationProvider } from "@ub1x/adaptivitynavigation";
+import { NavigationProvider } from "adaptivitynavigation";
 // import activeStory from your storage (Redux or any)
 const App = () => {
   <NavigationProvider activeStory={activeStory}>
@@ -64,10 +64,7 @@ ReactDOM.render(
 
 ```jsx
 // App.jsx
-import {
-  NavigationProvider,
-  NavigationButton,
-} from "@ub1x/adaptivitynavigation";
+import { NavigationProvider, NavigationButton } from "adaptivitynavigation";
 // import activeStory from your storage (Redux or any)
 const App = () => {
   <NavigationProvider
