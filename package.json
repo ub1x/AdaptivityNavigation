@@ -1,6 +1,6 @@
 {
   "name": "adaptivitynavigation",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Библиотека для адаптивного ui навигации в зависимости от размеров экрана",
   "main": "dist/index.ts",
   "types": "dist/index.d.ts",

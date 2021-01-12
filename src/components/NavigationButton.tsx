@@ -23,7 +23,6 @@ export const NavigationButton: FC<INavigationButton> = (
             { hasReactNode(children) && children }
           </TabbarItem>
         ) : (
-          // в пизду, я хз как это фиксить
           // @ts-ignore
           <Cell
             disabled={selected}
