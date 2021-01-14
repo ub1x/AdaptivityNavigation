@@ -7,13 +7,13 @@
 Используя npm:
 
 ```sh
-$ npm i adaptivitynavigation
+$ npm i @danyarubcov/AdaptivityNavigation
 ```
 
 Используя yarn:
 
 ```sh
-$ yarn add adaptivitynavigation
+$ yarn add @danyarubcov/AdaptivityNavigation
 ```
 
 # Использование
@@ -24,7 +24,7 @@ $ yarn add adaptivitynavigation
 
 ```jsx
 // App.jsx
-import { NavigationProvider } from 'adaptivitynavigation';
+import { NavigationProvider } from "@danyarubcov/AdaptivityNavigation";
 // import activeStory from your storage (Redux or any)
 const App = () => {
   <NavigationProvider activeStory={activeStory}>
@@ -41,9 +41,9 @@ const App = () => {
 
 ```jsx
 // index.js
-import ReactDOM from 'react-dom';
-import { AdaptivityProvider, AppRoot } from '@vkontakte/vkui';
-import App from './App';
+import ReactDOM from "react-dom";
+import { AdaptivityProvider, AppRoot } from "@vkontakte/vkui";
+import App from "./App";
 
 ReactDOM.render(
   <AdaptivityProvider>
@@ -51,7 +51,7 @@ ReactDOM.render(
       <App />
     </AppRoot>
   </AdaptivityProvider>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 ```
 
@@ -64,7 +64,10 @@ ReactDOM.render(
 
 ```jsx
 // App.jsx
-import { NavigationProvider, NavigationButton } from 'adaptivitynavigation';
+import {
+  NavigationProvider,
+  NavigationButton,
+} from "@danyarubcov/AdaptivityNavigation";
 // import activeStory from your storage (Redux or any)
 const App = () => {
   <NavigationProvider
@@ -72,22 +75,22 @@ const App = () => {
     buttons={
       <Fragment>
         <NavigationButton
-          selected={activeStory === 'main'}
-          data-story='main'
+          selected={activeStory === "main"}
+          data-story="main"
           onClick={(e) =>
-            alert('You click to button ' + e.currentTarget.dataset.story)
+            alert("You click to button " + e.currentTarget.dataset.story)
           }
-          text='Сервисы'
+          text="Сервисы"
         >
           <Icon28ServicesOutline />
         </NavigationButton>
         <NavigationButton
-          selected={activeStory === 'clips'}
-          data-story='clips'
+          selected={activeStory === "clips"}
+          data-story="clips"
           onClick={(e) =>
-            alert('You click to button ' + e.currentTarget.dataset.story)
+            alert("You click to button " + e.currentTarget.dataset.story)
           }
-          text='Клипы'
+          text="Клипы"
         >
           <Icon28ClipOutline />
         </NavigationButton>

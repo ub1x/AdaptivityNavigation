@@ -1,11 +1,12 @@
 {
-  "name": "adaptivitynavigation",
-  "version": "1.0.3",
+  "name": "@danyarubcov/adaptivitynavigation",
+  "version": "1.10.2",
   "description": "Библиотека для адаптивного ui навигации в зависимости от размеров экрана",
   "main": "dist/index.ts",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
+    "prepare": "install-peers",
     "publish": "npm run build && npm publish"
   },
   "author": "Danya Rubcov",
@@ -21,8 +22,8 @@
     "typescript": "^4.1.2"
   },
   "peerDependencies": {
-    "@vkontakte/vkui": "^4.0.4",
     "@vkontakte/vkjs": "^0.20.0",
+    "@vkontakte/vkui": "^4.0.4",
     "react": "^17.0.1"
   },
   "files": [
